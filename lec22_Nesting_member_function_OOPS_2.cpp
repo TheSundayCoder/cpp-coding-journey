@@ -66,7 +66,7 @@ void binary::ones_compliment(){
 
 int main(){
 binary b;
-//error b.s = "hello"; as s is
+//error b.s = "hello"; as s is private
 b.read();
 b.ones_compliment();
     return 0;
