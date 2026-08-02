@@ -48,6 +48,6 @@ int main()
     // cout<<harry.salary<<endl<<Adi.salary;
     programmer skillF;
     skillF.getData();
-    //skillF.id = 10; // This would be an error if id was private in employee class, but since it's public, we can access it here.
+    //skillF.id = 10; //this would be error if visibility mode is private, because id is inherited as private in programmer class....
     return 0;
 }
