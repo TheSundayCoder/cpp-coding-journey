@@ -1,0 +1,28 @@
+
+#include <iostream>
+using namespace std;
+ class Rectangle{
+    public:
+    int length;
+    int breadth;
+    int area(){
+        return length*breadth;
+    }
+    int perimeter(){
+        return 2*(length+breadth);
+    }
+};
+int main() {
+    Rectangle r1;
+    Rectangle *ptr = &r1;
+    Rectangle *q = new Rectangle; //or new Rectangle();
+    q -> length = 90;
+    q -> breadth = 80;
+    cout<<q->area()<<endl;
+  ptr -> length = 5;
+  (*ptr).breadth = 10;
+  cout<<ptr->area()
+<<endl;   
+cout<<(*ptr).perimeter()<<endl;
+ return 0;
+}
